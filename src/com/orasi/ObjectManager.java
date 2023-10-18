@@ -35,7 +35,7 @@ bC.add( new ByFactory( ByXPath.class, "//DIV[@class='category-cards']/DIV[1]", n
 bC.add( new ByFactory( ByXPath.class, "//*[@class='category-cards']/DIV[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]", null ) );
 
-objectMap.put( "13334.1613", bC );
+objectMap.put( "13409.3966", bC );
 
 
 bC = new ByFactoryCollection("item-0");
@@ -44,7 +44,7 @@ bC.add( new ByFactory( ByXPath.class, "(//UL[@class='menu-list'])[1]/LI[1]", nul
 bC.add( new ByFactory( ByXPath.class, "//LI[./SPAN[text()=\"Text Box\"]]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/DIV[1]/UL[1]/LI[1]", null ) );
 
-objectMap.put( "13334.1624", bC );
+objectMap.put( "13409.3977", bC );
 
 
 bC = new ByFactoryCollection("userName");
@@ -61,7 +61,7 @@ bC.add( new ByFactory( ByXPath.class, "(//INPUT[@autocomplete='off'])[1]", null 
 bC.add( new ByFactory( ByXPath.class, "(//DIV[@class='col-md-9 col-sm-12'])[1]/INPUT[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/FORM[1]/DIV[1]/DIV[2]/INPUT[1]", null ) );
 
-objectMap.put( "13334.1635", bC );
+objectMap.put( "13409.3988", bC );
 
 
 bC = new ByFactoryCollection("userEmail");
@@ -78,7 +78,7 @@ bC.add( new ByFactory( ByXPath.class, "(//INPUT[@autocomplete='off'])[2]", null 
 bC.add( new ByFactory( ByXPath.class, "(//DIV[@class='col-md-9 col-sm-12'])[2]/INPUT[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/FORM[1]/DIV[2]/DIV[2]/INPUT[1]", null ) );
 
-objectMap.put( "13334.1664", bC );
+objectMap.put( "13409.4017", bC );
 
 
 bC = new ByFactoryCollection("currentAddress");
@@ -93,7 +93,7 @@ bC.add( new ByFactory( ByXPath.class, "(//TEXTAREA[@cols='20'])[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "(//DIV[@class='col-md-9 col-sm-12'])[3]/TEXTAREA[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/FORM[1]/DIV[3]/DIV[2]/TEXTAREA[1]", null ) );
 
-objectMap.put( "13334.1692", bC );
+objectMap.put( "13409.4045", bC );
 
 
 bC = new ByFactoryCollection("permanentAddress");
@@ -106,7 +106,22 @@ bC.add( new ByFactory( ByXPath.class, "(//TEXTAREA[@cols='20'])[2]", null ) );
 bC.add( new ByFactory( ByXPath.class, "(//DIV[@class='col-md-9 col-sm-12'])[4]/TEXTAREA[1]", null ) );
 bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/FORM[1]/DIV[4]/DIV[2]/TEXTAREA[1]", null ) );
 
-objectMap.put( "13334.1716", bC );
+objectMap.put( "13409.4069", bC );
+
+
+bC = new ByFactoryCollection("submit");
+bC.add( new ByFactory( ByXPath.class, "//BUTTON[@id=\"submit\"]", null ) );
+bC.add( new ByFactory( ByXPath.class, "submit", null ) );
+bC.add( new ByFactory( ByXPath.class, "//*[@id=\"submit\"]", null ) );
+bC.add( new ByFactory( ByXPath.class, "//BUTTON[@class='btn btn-primary']", null ) );
+bC.add( new ByFactory( ByXPath.class, "//*[@class='btn btn-primary']", null ) );
+bC.add( new ByFactory( ByXPath.class, "(//BUTTON[@type='button'])[2]", null ) );
+bC.add( new ByFactory( ByXPath.class, "//DIV[@class='text-right col-md-2 col-sm-12']/BUTTON[1]", null ) );
+bC.add( new ByFactory( ByXPath.class, "//*[@class='text-right col-md-2 col-sm-12']/BUTTON[1]", null ) );
+bC.add( new ByFactory( ByXPath.class, "//BUTTON[text()=\"Submit\"]", null ) );
+bC.add( new ByFactory( ByXPath.class, "/BODY[1]/DIV[2]/DIV[1]/DIV[1]/DIV[2]/DIV[2]/DIV[2]/FORM[1]/DIV[5]/DIV[1]/BUTTON[1]", null ) );
+
+objectMap.put( "13409.4089", bC );
 
 
   }

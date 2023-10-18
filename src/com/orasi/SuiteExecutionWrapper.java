@@ -225,7 +225,7 @@ public class SuiteExecutionWrapper {
       SecretsProvider sP = null;
       Integration cI = null;
       
-      if ( hasValue( "iw", "13334.1603" ) ) { 
+      if ( hasValue( "iw", "13409.3956" ) ) { 
         cI = new com.orasi.integration.html.HTMLSerializer();
         log.warn( "Enabling Integration: " + cI.getTitle() );
         cI.setProperty( "outputFolder", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "outputFolder", DataManager.instance().replaceValues( "c:/1116" ) + "" ) );
@@ -236,7 +236,7 @@ public class SuiteExecutionWrapper {
         });
       }
       
-      if ( hasValue( "iw", "13334.1604" ) ) { 
+      if ( hasValue( "iw", "13409.3957" ) ) { 
         cI = new com.orasi.integration.console.ExecutionConsole();
         log.warn( "Enabling Integration: " + cI.getTitle() );
         cI.setProperty( "color", SuiteExecutionWrapper.instance().getOption( cI.getKey(), "color", DataManager.instance().replaceValues( "true" ) + "" ) );
@@ -254,25 +254,25 @@ public class SuiteExecutionWrapper {
 
       if ( cli.hasOption( "h" ) ) {
         HelpFormatter formatter = new HelpFormatter();
-        formatter.printHelp("java -jar Testing_compilation", SuiteExecutionWrapper.instance().getOptions() );
+        formatter.printHelp("java -jar Suite_for_testing_", SuiteExecutionWrapper.instance().getOptions() );
         System.exit( 0 );
       }
 
       if ( cli.hasOption( "q" ) ) {
-        System.out.println( "Testing compilation (Suite): 13334.1602" ); 
-        System.out.println( "Test One compilation (Test): 13334.1606" );
+        System.out.println( "Suite for testing  (Suite): 13409.3955" ); 
+        System.out.println( "Test One test (Test): 13409.3959" );
         
         
         
-	System.out.println( "Testing compilation Router (Router): 13334.1600" );
-	System.out.println( "Testing compilation Browser (Execution Target): 13334.1601" );
+	System.out.println( "Suite for testing  Router (Router): 13409.3953" );
+	System.out.println( "Suite for testing  Browser (Execution Target): 13409.3954" );
 	
-        System.out.println( "demoqa.com (Site): 13334.1608" );
-        System.out.println( "DEMOQA (Page): 13334.1610" );
+        System.out.println( "demoqa.com (Site): 13409.3961" );
+        System.out.println( "DEMOQA (Page): 13409.3963" );
         
         
-        System.out.println( "HTML Generator (Integration): 13334.1603" );
-        System.out.println( "Alchemy Execution Console (Integration): 13334.1604" );
+        System.out.println( "HTML Generator (Integration): 13409.3956" );
+        System.out.println( "Alchemy Execution Console (Integration): 13409.3957" );
         
         
         System.exit( 0 );
@@ -286,7 +286,7 @@ public class SuiteExecutionWrapper {
       if ( cli.hasOption( "a" ) ) {
         SuiteExecutionWrapper.instance().setName(cli.getOptionValue( "a" ));
       } else {
-        SuiteExecutionWrapper.instance().setName("Testing compilation");
+        SuiteExecutionWrapper.instance().setName("Suite for testing ");
       }
       if ( cli.hasOption( "u" ) ) {
         SuiteExecutionWrapper.instance().setUserName(cli.getOptionValue( "u" ));
@@ -296,17 +296,17 @@ public class SuiteExecutionWrapper {
       if ( cli.hasOption( "d" ) ) {
         SuiteExecutionWrapper.instance().setDescription(cli.getOptionValue( "d" ));
       } else {
-        SuiteExecutionWrapper.instance().setDescription("Write some text defining the functionality of Testing compilation");
+        SuiteExecutionWrapper.instance().setDescription("Write some text defining the functionality of Suite for testing ");
       }
 
       //
       // Configure the test level information
       //
       List<String> testList = new ArrayList(5);
-      if ( hasValue( "it", "13334.1606" ) ) {
+      if ( hasValue( "it", "13409.3959" ) ) {
         if ( 0 == 0 || ( 0 == 1 && cli.hasOption( "rd" ) ) || ( 0 == 2 && cli.hasOption( "rq" ) ) ) {
-          TestManager.instance().registerTest( new org.orasi_software__inc_.testing_compilation.test_one_compilation() );
-          testList.add("Test One compilation");
+          TestManager.instance().registerTest( new org.orasi_software__inc_.suite_for_testing_.test_one_test() );
+          testList.add("Test One test");
         }
       }
       
@@ -318,11 +318,11 @@ public class SuiteExecutionWrapper {
       //
       Router r;
       /*
-      Routers from Testing compilation
-      Testing compilation
+      Routers from Suite for testing 
+      Suite for testing 
       */
-      if ( hasValue( "ir", "13334.1600" ) ) { 
-        r = new Router( "Testing compilation Router", "13334.1600" ,"{\"name\":\"Testing compilation Router\",\"description\":\"Testing compilation Router\",\"alchemyId\":1600,\"alchemySeed\":13334,\"organizationId\":0,\"changed\":false,\"routerId\":1,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"http://grid.alchemytesting.com:4444/wd/hub\"}]}" );
+      if ( hasValue( "ir", "13409.3953" ) ) { 
+        r = new Router( "Suite for testing  Router", "13409.3953" ,"{\"name\":\"Suite for testing  Router\",\"description\":\"Suite for testing  Router\",\"alchemyId\":3953,\"alchemySeed\":13409,\"organizationId\":0,\"changed\":false,\"routerId\":1,\"status\":0,\"userId\":0,\"propertyList\":[{\"name\":\"URL\",\"value\":\"http://grid.alchemytesting.com:4444/wd/hub\"}]}" );
       
         r.addProperty( "URL", DataManager.instance().replaceValues( "http://grid.alchemytesting.com:4444/wd/hub" ) + "" );
         EndpointDeviceManager.instance().addRouter( r );
@@ -335,17 +335,17 @@ public class SuiteExecutionWrapper {
       List<String> targetList = new ArrayList<>(10);
       ExecutionTarget eT;
       /*
-      Targets from Testing compilation
-      Testing compilation
+      Targets from Suite for testing 
+      Suite for testing 
       */
-      if ( hasValue( "ie", "13334.1601" ) ) {
-        eT = new ExecutionTarget( "Testing compilation Browser", "13334.1601", "13334.1600", 1 ,"{\"name\":\"Testing compilation Browser\",\"description\":\"Testing compilation Browser\",\"alchemyId\":1601,\"alchemySeed\":13334,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":1,\"executionRouterID\":{\"alchemyId\":1600,\"alchemySeed\":13334},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"},{\"name\":\"browserVersion\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
-      	targetList.add("Testing compilation Browser");
+      if ( hasValue( "ie", "13409.3954" ) ) {
+        eT = new ExecutionTarget( "Suite for testing  Browser", "13409.3954", "13409.3953", 1 ,"{\"name\":\"Suite for testing  Browser\",\"description\":\"Suite for testing  Browser\",\"alchemyId\":3954,\"alchemySeed\":13409,\"organizationId\":0,\"changed\":false,\"maximumAvailable\":1,\"executionRouterID\":{\"alchemyId\":3953,\"alchemySeed\":13409},\"propertyList\":[{\"name\":\"browserName\",\"value\":\"firefox\"},{\"name\":\"browserVersion\"},{\"name\":\"platformName\",\"value\":\"ANY\"}],\"status\":0,\"userId\":0,\"referenceSuiteID\":0}" );
+      	targetList.add("Suite for testing  Browser");
         eT.addProperty( "browserName", DataManager.instance().replaceValues( "firefox" ) + "" );
         eT.addProperty( "browserVersion", DataManager.instance().replaceValues( "" ) + "" );
         eT.addProperty( "platformName", DataManager.instance().replaceValues( "ANY" ) + "" );
         EndpointDeviceManager.instance().addTarget( eT );
-        EndpointDeviceManager.instance().registerEndpoint( "13334.1601" );
+        EndpointDeviceManager.instance().registerEndpoint( "13409.3954" );
       }
       
 
@@ -396,7 +396,7 @@ public class SuiteExecutionWrapper {
       suitePayload.setName(name);
       suitePayload.setDescription(description);
       suitePayload.setUserName(userName);
-      suitePayload.setSuiteDetail(  "{\"id\":1715,\"name\":\"Testing compilation\",\"description\":\"Write some text defining the functionality of Testing compilation\",\"userId\":15,\"userName\":\"m.prasad@orasi.com\",\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"endpointId\":1,\"endpointStyleId\":1,\"targetId\":1772,\"targetConfigurationId\":0,\"targetVersionId\":0,\"importTests\":0,\"importFunctions\":0,\"importSites\":0,\"importTargets\":0,\"importData\":0,\"orgPermission\":1,\"publicPermission\":0,\"version\":2,\"lockUserId\":0,\"testDisplay\":0,\"alchemyId\":1602,\"alchemySeed\":13334,\"referenceSuiteID\":0,\"changed\":false}" );
+      suitePayload.setSuiteDetail(  "{\"id\":1717,\"name\":\"Suite for testing \",\"description\":\"Write some text defining the functionality of Suite for testing \",\"userId\":15,\"userName\":\"m.prasad@orasi.com\",\"userConfidence\":0,\"organizationId\":1,\"organizationConfidence\":0,\"status\":1,\"endpointId\":1,\"endpointStyleId\":1,\"targetId\":1774,\"targetConfigurationId\":0,\"targetVersionId\":0,\"importTests\":0,\"importFunctions\":0,\"importSites\":0,\"importTargets\":0,\"importData\":0,\"orgPermission\":1,\"publicPermission\":0,\"version\":2,\"lockUserId\":0,\"testDisplay\":0,\"alchemyId\":3955,\"alchemySeed\":13409,\"referenceSuiteID\":0,\"changed\":false}" );
       suitePayload.setTestList(testList);
       suitePayload.setTargetList(targetList);
       suitePayload.setTotalTests(totalTasks);
